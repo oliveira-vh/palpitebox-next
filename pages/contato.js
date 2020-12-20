@@ -4,13 +4,11 @@ import PageTitle from '../components/PageTitle';
 
 const Contato = () => {
     return (
-        <div>
+        <div className='text-center'>
             <PageTitle title='Contato' />
             <h1>Contato</h1>
             <div>
-                <Link href='/'>
-                    <a>Home</a>
-                </Link>
+                <p>Página para informações de contato</p>
             </div>
         </div>
     )
