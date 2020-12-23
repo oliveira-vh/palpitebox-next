@@ -38,18 +38,18 @@ const Pesquisa = () => {
             <p className='text-center mb-6'>O restaurante X sempre busca por atender melhor seus clientes.
 Por isso, estamos sempre abertos a ouvir a sua opinião.
             </p>
-            { !success && <div className='w-1/5 mx-auto'>
+            { !success && <div className='w-full mx-auto text-center'>
             <label className='font-bold'>Seu nome:</label>
-            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
+            <input type='text' className='p-5 block shadow bg-blue-100 my-2 mx-auto rounded md:w-1/2 sm:w-full lg:w-1/2' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
             <label className='font-bold'>E-mail:</label>
-            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
+            <input type='text' className='p-5 block shadow bg-blue-100 my-2 mx-auto rounded md:w-1/2 sm:w-full lg:w-1/2' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
             <label className='font-bold'>Whatsapp:</label>
-            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+            <input type='text' className='p-5 block shadow bg-blue-100 my-2 mx-auto rounded md:w-1/2 sm:w-full lg:w-1/2' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
             <label className='font-bold'>Nota:</label>
-            <div className='flex py-6'>
+            <div className='flex py-4 md:w-full sm:w-full lg:w-full'>
             {notas.map(nota => {
                 return (
-                <label className='block w-1/6 text-center'>
+                <label className='block w-full m-auto'>
                     {nota}<br />
                     <input type='radio' name='Nota' value={nota} onChange={onChange} />
                 </label>
@@ -59,8 +59,8 @@ Por isso, estamos sempre abertos a ouvir a sua opinião.
             </div>
             <button className='bg-blue-400 px-12 py-4 my-4 rounded-lg shadow-lg hover:shadow' onClick={save}>Salvar</button>
             </div>}
-            { success && <div className='w-1/5 mx-auto'>
-                <p className='mb-6 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3'>Obrigado por contribuir com a sua sugestão ou crítica</p>
+            { success && <div className='w-3/4 mx-auto'>
+                <p className='mb-6 text-center bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3 md:w-11/12 sm:w-full lg:w-11/12'>Obrigado por contribuir com a sua sugestão ou crítica</p>
                 {
                     retorno.showCoupon && <div className='text-center border p-4 mb-4'>
                         Seu cupom: <br />
@@ -71,7 +71,7 @@ Por isso, estamos sempre abertos a ouvir a sua opinião.
                     retorno.showCoupon && <div className='text-center border p-4 mb-4'>
                         <span className='font-bold block mb-2'>{retorno.Promo}</span>
                         <br />
-                        <span className='italic'>Tire um print ou foto desta tela e apresente ao garçon.</span>
+                        <span className='italic'>Tire um print ou foto desta tela e apresente ao garçom.</span>
                     </div>
                 }
         </div>}
