@@ -40,11 +40,11 @@ Por isso, estamos sempre abertos a ouvir a sua opinião.
             </p>
             { !success && <div className='w-1/5 mx-auto'>
             <label className='font-bold'>Seu nome:</label>
-            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded w-72' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
+            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
             <label className='font-bold'>E-mail:</label>
-            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded w-72' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
+            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
             <label className='font-bold'>Whatsapp:</label>
-            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded w-72' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+            <input type='text' className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
             <label className='font-bold'>Nota:</label>
             <div className='flex py-6'>
             {notas.map(nota => {
