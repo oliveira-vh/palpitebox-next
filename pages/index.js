@@ -19,7 +19,7 @@ const Index = () => {
                 <a className='bg-blue-400 px-12 py-4 rounded-lg shadow-lg hover-shadow'>Dar opinião ou sugestão</a>
             </Link>
         </div>
-        { !data && <p>Carregando...</p> }
+        { !data && <p className='text-center'>Carregando...</p> }
         {!error && data && data.showCoupon &&
         <p className='my-12 text-center'>
             {data.message}
